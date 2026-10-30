@@ -1,8 +1,8 @@
-# The Christian Systems account server: the official AT Protocol PDS from Bluesky, configured for Railway.
+# The Mundus Novus account server: the official AT Protocol PDS from Bluesky, configured for Railway.
 # Accounts, posts, follows and pictures live here, in each person's own repository, so they can move them to any
 # other PDS whenever they like. Settings come from the environment; see README.md and .env.example.
 FROM ghcr.io/bluesky-social/pds:0.4
-LABEL org.opencontainers.image.title="Christian Systems PDS" org.opencontainers.image.licenses="MIT AND Apache-2.0"
+LABEL org.opencontainers.image.title="Mundus Novus PDS" org.opencontainers.image.licenses="MIT AND Apache-2.0"
 ENV PDS_PORT=3000 \
     PDS_DATA_DIRECTORY=/pds \
     PDS_BLOBSTORE_DISK_LOCATION=/pds/blocks \
