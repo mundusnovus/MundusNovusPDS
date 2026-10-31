@@ -1,6 +1,6 @@
 # MundusNovusPDS
 
-The account server behind **MNSocial**. It is the official
+The account server behind **Asteria Social**. It is the official
 [AT Protocol PDS](https://github.com/bluesky-social/pds) from Bluesky, set up to run on Railway.
 
 Each person's account, posts, likes, follows and pictures are kept here in their own signed repository. Because it
@@ -21,9 +21,9 @@ only keeps an index for feeds, search, notifications, messages and moderation.
    ```
 
    Add them, with the two names from `.env.example`, to the service's variables. Keep a private copy of all three.
-4. Add the custom domain `pds.mundusnovus.org`, and a wildcard `*.pds.mundusnovus.org`, so each handle
-   (`name.pds.mundusnovus.org`) can prove itself. Railway shows the DNS records to add.
-5. Check it: `https://pds.mundusnovus.org/xrpc/_health` answers with its version.
+4. Add the custom domain `pds.asteria.technology`, and a wildcard `*.pds.asteria.technology`, so each handle
+   (`name.pds.asteria.technology`) can prove itself. Railway shows the DNS records to add.
+5. Check it: `https://pds.asteria.technology/xrpc/_health` answers with its version.
 6. In the Social service (MundusNovusOrg), set `PDS_URL` to that address and `PDS_ADMIN_PASSWORD` to the same
    admin password.
 
@@ -33,7 +33,7 @@ sign up on this server directly.
 ## Look after it
 
 ```bash
-PDS_URL=https://pds.mundusnovus.org PDS_ADMIN_PASSWORD=... python3 scripts/admin.py health
+PDS_URL=https://pds.asteria.technology PDS_ADMIN_PASSWORD=... python3 scripts/admin.py health
 ```
 
 `scripts/admin.py` also makes invite codes, looks up an account, and suspends or restores one. Social's moderators
@@ -44,5 +44,5 @@ Bluesky's release notes, and redeploy.
 
 ## License
 
-Our files here are under the **Mundus Novus License 1.0** (GPL-3.0-only); see [LICENSING.md](LICENSING.md).
+Our files here are under the **Asteria License 1.0** (GPL-3.0-only); see [LICENSING.md](LICENSING.md).
 The PDS itself is Bluesky's, under the MIT and Apache 2.0 licenses.

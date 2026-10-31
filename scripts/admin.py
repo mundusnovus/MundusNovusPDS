@@ -1,6 +1,6 @@
 """Small admin tasks against the running PDS, with its admin password. Standard library only.
 
-    PDS_URL=https://pds.mundusnovus.org PDS_ADMIN_PASSWORD=... python3 scripts/admin.py health
+    PDS_URL=https://pds.asteria.technology PDS_ADMIN_PASSWORD=... python3 scripts/admin.py health
     ... python3 scripts/admin.py invite                 one single-use invite code
     ... python3 scripts/admin.py account <did>          details of one account
     ... python3 scripts/admin.py takedown <did>         suspend an account (undo with: restore <did>)
